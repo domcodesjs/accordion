@@ -23,9 +23,9 @@ function App() {
   ]);
 
   const toggleHide = (index) => {
-    const copy = [...sections];
-    copy[index].hide = !copy[index].hide;
-    return setSections(copy);
+    const sectionsCopy = [...sections];
+    sectionsCopy[index].hide = !sectionsCopy[index].hide;
+    return setSections(sectionsCopy);
   };
 
   return (
